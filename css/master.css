@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+header{
+  position: absolute;
+  margin-left: 0%;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-logo {
+  background: url(../img/big_logo.png) no-repeat;
+  background-size: contain;
+  width: 78vh;
+      height: 48vh;
+
+}
