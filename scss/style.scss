@@ -36,3 +36,13 @@ header {
     float: right;
   }
 }
+
+.crown-logo {
+  background: url('../../img/crown_logo.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 1% auto;
+
+  width: 30%;
+  height: 90vh;
+}
