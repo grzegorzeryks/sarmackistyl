@@ -11,46 +11,61 @@ $(document).ready(function() {
   // });
 
 
-//page load animation
-backLogo.css('top', '11%');
-crownLogo.addClass('crown-logo-move');
+  //page load animation
+  backLogo.css('top', '11%');
+  crownLogo.addClass('crown-logo-move');
 
-// crownLogo.mousemove(function(){
-//   // $(this).css('margin','1% 40%');
-//   $(this).addClass('crown-logo-animate');
-//   console.log('dziaa');
-//
-//    crownLogo.removeClass('crown-logo-animate');
-//    console.log('class removed');
-//
-// });
+  // crownLogo.mousemove(function(){
+  //   // $(this).css('margin','1% 40%');
+  //   $(this).addClass('crown-logo-animate');
+  //   console.log('dziaa');
+  //
+  //    crownLogo.removeClass('crown-logo-animate');
+  //    console.log('class removed');
+  //
+  // });
 
+  //finding element offset and animating aside
 
-//Smooth scroll
-$('a[href*="#"]')
-
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-      &&
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+       console.log(scroll);
+      if (scroll >= 737) {
+          //console.log('a');
+          graphic.addClass("change");
+      } else {
+          //console.log('a');
+          graphic.removeClass("change");
       }
-    }
   });
+
+
+
+
+  //Smooth scroll
+  $('a[href*="#"]')
+
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+      }
+    });
 
 
 
