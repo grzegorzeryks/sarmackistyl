@@ -15,11 +15,14 @@ $(document).ready(function() {
 backLogo.css('top', '11%');
 crownLogo.addClass('crown-logo-move');
 
-crownLogo.mousemove(function(){
-  // $(this).css('margin','1% 40%');
-  $(this).addClass('crown-logo-animate');
-
-
-});
+// crownLogo.mousemove(function(){
+//   // $(this).css('margin','1% 40%');
+//   $(this).addClass('crown-logo-animate');
+//   console.log('dziaa');
+//
+//    crownLogo.removeClass('crown-logo-animate');
+//    console.log('class removed');
+//
+// });
 
 });

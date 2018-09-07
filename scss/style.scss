@@ -48,7 +48,15 @@ header {
 
   ul:nth-child(2) {
     margin-right: 20px;
+    margin-top: -10px;
     float: right;
+    li:nth-child(4),li:nth-child(5) {
+      margin-left: 0px;
+    }
+  }
+  img {
+    width: 67%;
+    transform: translateY(8px);
   }
 }
 // start first section
@@ -75,21 +83,21 @@ header {
   margin: 1% 35%;
 }
 
-.crown-logo-animate {
-  animation: moveBigCrown 1s;
-}
-@keyframes moveBigCrown {
-  0% {
-    margin: 1% 35%;
-  }
-
-  50% {
-    margin: 1% 37%;
-  }
-  100% {
-      margin: 1% 35%;
-  }
-}
+// .crown-logo-animate {
+//   animation: moveBigCrown 1s;
+// }
+// @keyframes moveBigCrown {
+//   0% {
+//     margin: 1% 35%;
+//   }
+//
+//   50% {
+//     margin: 1% 37%;
+//   }
+//   100% {
+//       margin: 1% 35%;
+//   }
+// }
 
 .background-logo {
   background: url("../../img/back_logo.png") no-repeat;
