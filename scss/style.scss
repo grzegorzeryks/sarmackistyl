@@ -77,4 +77,20 @@ header {
   z-index: -1;
   left: 23%;
   top: 11%;
+  animation: rotation 18s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+//second section
+.graphic {
+  height: 100vh;
+  background: $color-black ;
 }
