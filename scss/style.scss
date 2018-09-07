@@ -37,7 +37,7 @@ header {
       a {
         color: $font-nav;
         text-decoration: none;
-        transition: all 1s;
+        transition: all 0.5s;
 
         &:hover {
           color: white;
@@ -51,6 +51,12 @@ header {
     float: right;
   }
 }
+// start first section
+
+.start {
+  margin-top: -15px;
+  height: 98vh;
+}
 
 .crown-logo {
   background: url("../../img/crown_logo.png") no-repeat;
@@ -59,4 +65,16 @@ header {
   margin: 1% auto;
   width: 30%;
   height: 90vh;
+}
+
+.background-logo {
+  background: url("../../img/back_logo.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  width: 54%;
+  height: 83%;
+  z-index: -1;
+  left: 23%;
+  top: 11%;
 }
