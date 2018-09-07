@@ -1,10 +1,10 @@
 $(document).ready(function() {
   console.log('ready!');
   let backLogo = $(".background-logo");
-  console.log(backLogo);
   let graphic = $('#graphic');
-  console.log(graphic);
   let crownLogo = $('.crown-logo');
+  let asideMenu = $('aside');
+  console.log(asideMenu);
   // back.on('click',function(){
   //   console.log('elo');
   //
@@ -30,12 +30,12 @@ $(document).ready(function() {
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
        console.log(scroll);
-      if (scroll >= 737) {
+      if (scroll >= 730) {
           //console.log('a');
-          graphic.addClass("change");
+          asideMenu.addClass("move-aside");
       } else {
           //console.log('a');
-          graphic.removeClass("change");
+          asideMenu.removeClass("move-aside");
       }
   });
 
