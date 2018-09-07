@@ -77,7 +77,7 @@ header {
   z-index: -1;
   left: 23%;
   top: 11%;
-  animation: rotation 18s infinite linear;
+  animation: rotation 19s infinite linear;
 }
 
 @keyframes rotation {
@@ -93,4 +93,9 @@ header {
 .graphic {
   height: 100vh;
   background: $color-black ;
+  p{
+    width: 20%;
+    margin: 0 auto;
+    color: $color-white;
+  }
 }
