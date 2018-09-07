@@ -68,10 +68,25 @@ header {
   transition: all 1.6s;
 }
 
-.crown-logo-move{
+.crown-logo-move {
   margin: 1% 35%;
 }
 
+.crown-logo-animate {
+  animation: moveBigCrown 1s;
+}
+@keyframes moveBigCrown {
+  0% {
+    margin: 1% 35%;
+  }
+
+  50% {
+    margin: 1% 37%;
+  }
+  100% {
+      margin: 1% 35%;
+  }
+}
 
 .background-logo {
   background: url("../../img/back_logo.png") no-repeat;
@@ -87,7 +102,6 @@ header {
   animation: rotation 19s infinite linear;
   transition: all 1.3s;
 }
-
 @keyframes rotation {
   //zmienic na 100%?
   from {
@@ -99,16 +113,19 @@ header {
   }
 }
 //second section
+
 .graphic {
   height: 100vh;
-  background: $color-black ;
-  padding:50px;
-  div{
-    width:50%;
-    padding: 10vh 0 0 0;
+  background: $color-black;
+  padding: 50px;
+
+  div {
+    width: 50%;
+    padding: 10vh 0 0;
     margin: 0 auto;
   }
-  p{
+
+  p {
     width: 26%;
     margin: 0 auto;
     color: $color-white;
