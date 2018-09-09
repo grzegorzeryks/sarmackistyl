@@ -187,9 +187,16 @@ header {
 //photo
 
 .photo {
-  background: white;
+  background: black;
   height: 100vh;
 }
+
+//ABOUT
+.about {
+  background: $font-nav;
+  height: 100vh;
+}
+
 //aside
 
 aside {
