@@ -184,7 +184,14 @@ header {
 .frontend {
   height: 100vh;
 }
+//photo
+
+.photo {
+  background: white;
+  height: 100vh;
+}
 //aside
+
 aside {
   width: 50px;
   height: 40%;
@@ -192,15 +199,19 @@ aside {
   top: 4%;
   left: -100px;
   transition: all 1s;
-ul {
-  list-style: none;
-  li{
-    margin-top: 14px;
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-top: 14px;
+    }
   }
-}
+
   img {
     width: 100%;
     transition: all 1s;
+
     &:hover {
       transform: rotateY(3.142rad);
     }
