@@ -1,14 +1,10 @@
 $(document).ready(function() {
-  console.log('ready!');
   let backLogo = $(".background-logo");
   let graphic = $('#graphic');
   let crownLogo = $('.crown-logo');
   let asideMenu = $('aside');
-  console.log(asideMenu);
-  // back.on('click',function(){
-  //   console.log('elo');
-  //
-  // });
+
+
 
 
   //page load animation
@@ -30,7 +26,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
        console.log(scroll);
-      if (scroll >= 730) {
+      if (scroll >= 710) {
           //console.log('a');
           asideMenu.addClass("move-aside");
       } else {

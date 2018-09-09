@@ -128,8 +128,9 @@ header {
 //second section
 
 .graphic {
-  height: 100vh;
-  background: $color-black;
+  background: $color-black url('../img/back_logo_solid.png') no-repeat;
+  background-position: -199px 82px;
+  background-size: cover;
   padding: 25px 40px;
 
   .main {
@@ -161,8 +162,9 @@ header {
     img {
       width: 100%;
       height: auto;
-      transition: all .5s;
-      &:hover{
+      transition: all 0.5s;
+
+      &:hover {
         transform: scale(0.96);
       }
     }
@@ -177,20 +179,32 @@ header {
     padding: 0;
   }
 }
-// @media screen and (max-width: 400px) {
-//   .gallery div { margin: 0; }
-//   .gallery { padding: 0; }
-//
-// }
-//aside
+//FRONTEND
 
+.frontend {
+  height: 100vh;
+}
+//aside
 aside {
   width: 50px;
   height: 40%;
   position: fixed;
   top: 4%;
-  left: -500px;
+  left: -100px;
   transition: all 1s;
+ul {
+  list-style: none;
+  li{
+    margin-top: 14px;
+  }
+}
+  img {
+    width: 100%;
+    transition: all 1s;
+    &:hover {
+      transform: rotateY(3.142rad);
+    }
+  }
 }
 
 .move-aside {
