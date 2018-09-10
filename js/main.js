@@ -3,7 +3,7 @@ $(document).ready(function() {
   let graphic = $('#graphic');
   let crownLogo = $('.crown-logo');
   let asideMenu = $('aside');
-
+let constructLogo = $('.construct')
 
 
 
@@ -24,15 +24,17 @@ $(document).ready(function() {
   //finding element offset and animating aside
 
   $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-       console.log(scroll);
-      if (scroll >= 710) {
-          //console.log('a');
-          asideMenu.addClass("move-aside");
-      } else {
-          //console.log('a');
-          asideMenu.removeClass("move-aside");
-      }
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+    if (scroll >= 710) {
+      //console.log('a');
+      constructLogo.css('right', '4px');
+      asideMenu.addClass("move-aside");
+    } else {
+      //console.log('a');
+          constructLogo.css('right', '-30%');
+      asideMenu.removeClass("move-aside");
+    }
   });
 
 
