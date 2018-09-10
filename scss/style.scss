@@ -194,19 +194,22 @@ header {
       color: black;
     }
   }
-  background: $font-nav;
+  background: $font-nav url('../img/crown_logo.png') no-repeat;
+  background-position: right 130px;
+  background-size: contain;
   height: 100vh;
 
   article {
     width: 65%;
     height: 400px;
-    background:  rgba(255, 255, 255, 0.79);
+    background: rgba(255, 255, 255, 0.79);
     border: rgb(238, 238, 238) dashed 2px;
     margin: 30px auto;
     display: flex;
     padding: 10px;
     align-items: center;
     justify-content: center;
+
     div {
       width: 60%;
       height: 90%;
@@ -215,6 +218,7 @@ header {
       // justify-content: center;
       align-items: center;
       flex-direction: column;
+
       h3 {}
 
       p {
@@ -232,8 +236,8 @@ header {
 
 .construct {
   transition: all 1s;
-  position:fixed;
-  right: -10%;
+  position: fixed;
+  right: -30%;
   top: 30px;
 }
 //photo
@@ -249,6 +253,7 @@ header {
   height: 100vh;
 }
 //aside
+
 aside {
   width: 50px;
   height: 40%;
