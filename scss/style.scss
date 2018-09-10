@@ -193,7 +193,35 @@ header {
 //FRONTEND
 
 .frontend {
+  .main {
+    h2 {
+        color: black;
+    }
+  }
+
+  background: $font-nav;
   height: 100vh;
+  article {
+    width: 65%;
+    height: 200px;
+    border: black dashed 1px;
+    margin: 30px auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+justify-content: center;
+    div {
+      width: 45%;
+      height: 90%;
+      border: 1px dashed black;
+      margin-left: 1%;
+      display: flex;
+justify-content: center;
+      h3{
+
+      }
+    }
+  }
 }
 //photo
 
