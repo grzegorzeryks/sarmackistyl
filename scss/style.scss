@@ -202,7 +202,8 @@ header {
     width: 70%;
     height: 400px;
     background: rgba(255, 255, 255, 0.79);
-    border: rgb(238, 238, 238) dashed 2px;
+    border: rgb(238, 238, 238) solid 2px;
+    border-radius: 20px 0;
     margin: 30px auto;
     display: flex;
     padding: 10px;
@@ -293,7 +294,7 @@ header {
   background: black;
   height: 100vh;
 }
-//ABOUT
+//about
 
 .about {
   background: $font-nav;
@@ -308,6 +309,7 @@ aside {
   top: 4%;
   left: -100px;
   transition: all 1s;
+
 
   ul {
     list-style: none;
@@ -339,7 +341,6 @@ aside {
   background-size: contain;
   cursor: pointer;
   transition: all 1s;
-
   &:hover {
     transform: rotateY(3.142rad);
   }
