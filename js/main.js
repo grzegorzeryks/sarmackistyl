@@ -3,7 +3,7 @@ $(document).ready(function() {
   let graphic = $('#graphic');
   let crownLogo = $('.crown-logo');
   let asideMenu = $('aside');
-let constructLogo = $('.construct')
+  let constructLogo = $('.construct')
 
 
 
@@ -11,28 +11,32 @@ let constructLogo = $('.construct')
   backLogo.css('top', '11%');
   crownLogo.addClass('crown-logo-move');
 
-  // crownLogo.mousemove(function(){
-  //   // $(this).css('margin','1% 40%');
-  //   $(this).addClass('crown-logo-animate');
-  //   console.log('dziaa');
-  //
-  //    crownLogo.removeClass('crown-logo-animate');
-  //    console.log('class removed');
-  //
-  // });
 
-  //finding element offset and animating aside
+  //scrolling
 
   $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
+    let scroll = $(window).scrollTop();
+    let grapicSectionHeight = $('.graphic').height();
+    let landingSectionHeight = $('.start').height();
+    let graphicEndPosition = landingSectionHeight + grapicSectionHeight + 20;
+
     console.log(scroll);
-    if (scroll >= 710) {
+
+    console.log('graph ' + grapicSectionHeight);
+    console.log('end ' + graphicEndPosition);
+
+
+
+    if (scroll >= landingSectionHeight && scroll < graphicEndPosition) {
       //console.log('a');
       constructLogo.css('right', '4px');
       asideMenu.addClass("move-aside");
+    } else if (scroll >= graphicEndPosition) {
+            console.log('hurrraaaa');
+            //kodzik do zmiany koloru
     } else {
       //console.log('a');
-          constructLogo.css('right', '-30%');
+      constructLogo.css('right', '-30%');
       asideMenu.removeClass("move-aside");
     }
   });
