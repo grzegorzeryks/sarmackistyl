@@ -52,7 +52,7 @@ header, footer {
 
   ul:nth-child(2) {
     margin-right: 20px;
-    margin-top: -10px;
+    margin-top: -7px;
     float: right;
 
     li:nth-child(4),
@@ -306,7 +306,7 @@ header, footer {
 //about
 
 .about {
-  background: WHITE;
+  background: white;
   background-image: url("../img/back_logo_opacity.png");
   background-repeat: no-repeat;
   background-position: -199px 82px;
@@ -334,7 +334,6 @@ header, footer {
       display: flex;
       align-items: center;
       width: 30%;
-      height: 60vh;
       flex-direction: column;
     }
 
@@ -351,6 +350,22 @@ header, footer {
         margin-top: 20px;
         line-height: 1.6;
         font-size: 1.1rem;
+      }
+
+      .contact-button{
+        background: $color-bg;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px !important;
+        transition: all 1s;
+        cursor: pointer;
+        h3{
+          color: white;
+        }
+        &:hover {
+          transform: translateY(-10px);
+        }
       }
     }
 
