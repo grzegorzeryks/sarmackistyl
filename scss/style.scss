@@ -341,12 +341,16 @@ aside {
 .small-logo {
   width: 100%;
   height: 31%;
-  background: url("../img/crown_logo.png") no-repeat;
+  background: url("../img/crown_logo_white.png") no-repeat;
   background-position: center;
   background-size: contain;
   cursor: pointer;
-  transition: all 1s;
+  transition: all 0.5s;
   &:hover {
     transform: rotateY(3.142rad);
+  }
+  .small-logo-color {
+      background: url("../img/crown_logo3.png") no-repeat !important;
+      height: 88%;
   }
 }

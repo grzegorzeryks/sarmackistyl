@@ -3,14 +3,19 @@ $(document).ready(function() {
   let graphic = $('#graphic');
   let crownLogo = $('.crown-logo');
   let asideMenu = $('aside');
-  let constructLogo = $('.construct')
-
+  let constructLogo = $('.construct');
+  let smallLogo = $('.small-logo');
+  let designIcon = $('#design-icon');
+  let frontIcon = $('#front-icon');
+  let photoIcon = $('#photo-icon');
+let aboutIcon = $('#about-icon');
 
 
   //page load animation
   backLogo.css('top', '11%');
   crownLogo.addClass('crown-logo-move');
-
+  console.log(smallLogo);
+console.log(designIcon);
 
   //scrolling
 
@@ -18,26 +23,35 @@ $(document).ready(function() {
     let scroll = $(window).scrollTop();
     let grapicSectionHeight = $('.graphic').height();
     let landingSectionHeight = $('.start').height();
+    let frontendSectionHeight = $('.frontend').height();
     let graphicEndPosition = landingSectionHeight + grapicSectionHeight + 20;
-
+    let frontendEndPosition = graphicEndPosition + frontendSectionHeight;
     console.log(scroll);
-
+    console.log('frontend ' + frontendEndPosition);
     console.log('graph ' + grapicSectionHeight);
     console.log('end ' + graphicEndPosition);
 
 
 
+
     if (scroll >= landingSectionHeight && scroll < graphicEndPosition) {
-      //console.log('a');
       constructLogo.css('right', '4px');
-      asideMenu.addClass("move-aside");
-    } else if (scroll >= graphicEndPosition) {
-            console.log('hurrraaaa');
-            //kodzik do zmiany koloru
+      asideMenu.addClass('move-aside');
+      smallLogo.css('background', 'url("../img/crown_logo_white.png") no-repeat center').css('background-size', 'contain');
+      designIcon.attr('src','../img/design_icon.png');
+      frontIcon.attr('src','../img/code_icon.png');
+      photoIcon.attr('src', '../img/photo_icon.png');
+      aboutIcon.attr('src', '../img/phone_icon.png');
+    } else if (scroll >= graphicEndPosition && scroll <= frontendEndPosition) {
+      asideMenu.addClass('move-aside');
+      smallLogo.css('background', 'url("../img/crown_logo3.png") no-repeat center').css('background-size', 'contain');
+      designIcon.attr('src','../img/design_icon2.png');
+      frontIcon.attr('src','../img/code_icon2.png');
+      photoIcon.attr('src', '../img/photo_icon2.png');
+      aboutIcon.attr('src', '../img/phone_icon2.png');
     } else {
-      //console.log('a');
       constructLogo.css('right', '-30%');
-      asideMenu.removeClass("move-aside");
+      asideMenu.removeClass('move-aside');
     }
   });
 
