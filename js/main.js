@@ -8,14 +8,14 @@ $(document).ready(function() {
   let designIcon = $('#design-icon');
   let frontIcon = $('#front-icon');
   let photoIcon = $('#photo-icon');
-let aboutIcon = $('#about-icon');
-
+  let aboutIcon = $('#about-icon');
+  let smallCrownIcon = $('#small-crown-icon');
 
   //page load animation
   backLogo.css('top', '11%');
   crownLogo.addClass('crown-logo-move');
   console.log(smallLogo);
-console.log(designIcon);
+  console.log(designIcon);
 
   //scrolling
 
@@ -24,31 +24,44 @@ console.log(designIcon);
     let grapicSectionHeight = $('.graphic').height();
     let landingSectionHeight = $('.start').height();
     let frontendSectionHeight = $('.frontend').height();
+    let photoSectionHeight = $('.photo').height();
     let graphicEndPosition = landingSectionHeight + grapicSectionHeight + 20;
     let frontendEndPosition = graphicEndPosition + frontendSectionHeight;
+    let photoEndPosition = frontendEndPosition + photoSectionHeight;
     console.log(scroll);
     console.log('frontend ' + frontendEndPosition);
     console.log('graph ' + grapicSectionHeight);
     console.log('end ' + graphicEndPosition);
 
+    function whiteLogos() {
+      smallCrownIcon.attr('src', '../img/crown_logo_white.png');
+      designIcon.attr('src', '../img/design_icon.png');
+      frontIcon.attr('src', '../img/code_icon.png');
+      photoIcon.attr('src', '../img/photo_icon.png');
+      aboutIcon.attr('src', '../img/phone_icon.png');
+    }
 
+    function blackLogos() {
+      smallCrownIcon.attr('src', '../img/crown_logo_black.png');
+      designIcon.attr('src', '../img/design_icon2.png');
+      frontIcon.attr('src', '../img/code_icon2.png');
+      photoIcon.attr('src', '../img/photo_icon2.png');
+      aboutIcon.attr('src', '../img/phone_icon2.png');
+    }
 
 
     if (scroll >= landingSectionHeight && scroll < graphicEndPosition) {
       constructLogo.css('right', '4px');
       asideMenu.addClass('move-aside');
-      smallLogo.css('background', 'url("../img/crown_logo_white.png") no-repeat center').css('background-size', 'contain');
-      designIcon.attr('src','../img/design_icon.png');
-      frontIcon.attr('src','../img/code_icon.png');
-      photoIcon.attr('src', '../img/photo_icon.png');
-      aboutIcon.attr('src', '../img/phone_icon.png');
+      whiteLogos();
     } else if (scroll >= graphicEndPosition && scroll <= frontendEndPosition) {
       asideMenu.addClass('move-aside');
-      smallLogo.css('background', 'url("../img/crown_logo3.png") no-repeat center').css('background-size', 'contain');
-      designIcon.attr('src','../img/design_icon2.png');
-      frontIcon.attr('src','../img/code_icon2.png');
-      photoIcon.attr('src', '../img/photo_icon2.png');
-      aboutIcon.attr('src', '../img/phone_icon2.png');
+      blackLogos();
+    } else if (scroll > frontendEndPosition && scroll <= photoEndPosition) {
+      whiteLogos();
+
+    } else if (scroll > photoEndPosition) {
+      blackLogos();
     } else {
       constructLogo.css('right', '-30%');
       asideMenu.removeClass('move-aside');

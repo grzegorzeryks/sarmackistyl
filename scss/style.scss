@@ -195,8 +195,8 @@ header {
     }
   }
   background: $font-nav url('../img/crown_logo2.png') no-repeat;
-  background-position: right 130px;
-  background-size: contain;
+  background-position: right -27px;
+      background-attachment: fixed;
 
   article {
     width: 70%;
@@ -336,21 +336,4 @@ aside {
 
 .move-aside {
   left: 20px;
-}
-
-.small-logo {
-  width: 100%;
-  height: 31%;
-  background: url("../img/crown_logo_white.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-  cursor: pointer;
-  transition: all 0.5s;
-  &:hover {
-    transform: rotateY(3.142rad);
-  }
-  .small-logo-color {
-      background: url("../img/crown_logo3.png") no-repeat !important;
-      height: 88%;
-  }
 }
