@@ -316,6 +316,19 @@ header {
   .main {
     flex-direction: row;
     justify-content: space-around;
+    position: relative;
+.side-photo {
+  &:before {
+    content: '';
+    width: 0;
+  	height: 0;
+  	border-bottom: 400px solid black;
+  	border-left: 400px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right:0;
+  }
+}
 
     div {
       display: flex;
@@ -327,7 +340,7 @@ header {
 
     div:nth-child(1) {
       width: 64%;
-      padding: 5%;
+    padding: 3% 5%;
 
       h2 {
         color: black;
@@ -342,17 +355,33 @@ header {
     }
 
     img {
-      width: 133%;
+      width: 117%;
       position: relative;
       right: 15%;
       bottom: -39px;
     }
+    }
+
   }
 
   .tools {
     height: 40vh;
     background: black;
-  }
+    z-index: 1;
+
+    h2 {
+      color: white;
+      padding-top: 41px;
+      padding-left: 33%;
+    }
+
+    img {
+      height: 70px;
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+
+
 }
 //aside
 

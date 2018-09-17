@@ -49,22 +49,23 @@ $(document).ready(function() {
       aboutIcon.attr('src', '../img/phone_icon2.png');
     }
 
-
-    if (scroll >= landingSectionHeight && scroll < graphicEndPosition) {
+    if (scroll >= landingSectionHeight) {
       constructLogo.css('right', '4px');
       asideMenu.addClass('move-aside');
-      whiteLogos();
-    } else if (scroll >= graphicEndPosition && scroll <= frontendEndPosition) {
-      asideMenu.addClass('move-aside');
-      blackLogos();
-    } else if (scroll > frontendEndPosition && scroll <= photoEndPosition) {
-      whiteLogos();
-
-    } else if (scroll > photoEndPosition) {
-      blackLogos();
     } else {
       constructLogo.css('right', '-30%');
       asideMenu.removeClass('move-aside');
+    }
+
+
+    if (scroll >= landingSectionHeight && scroll < graphicEndPosition) {
+      whiteLogos();
+    } else if (scroll >= graphicEndPosition && scroll <= frontendEndPosition) {
+      blackLogos();
+    } else if (scroll > frontendEndPosition && scroll <= photoEndPosition) {
+      whiteLogos();
+    } else if (scroll > photoEndPosition) {
+      blackLogos();
     }
   });
 
