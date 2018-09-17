@@ -34,11 +34,11 @@ $(document).ready(function() {
     console.log('end ' + graphicEndPosition);
 
     function whiteLogos() {
-      smallCrownIcon.attr('src', '../img/crown_logo_white.png');
-      designIcon.attr('src', '../img/design_icon.png');
-      frontIcon.attr('src', '../img/code_icon.png');
-      photoIcon.attr('src', '../img/photo_icon.png');
-      aboutIcon.attr('src', '../img/phone_icon.png');
+      smallCrownIcon.attr('src', 'img/crown_logo_white.png');
+      designIcon.attr('src', 'img/design_icon.png');
+      frontIcon.attr('src', 'img/code_icon.png');
+      photoIcon.attr('src', 'img/photo_icon.png');
+      aboutIcon.attr('src', 'img/phone_icon.png');
     }
 
     function blackLogos() {
