@@ -42,11 +42,11 @@ $(document).ready(function() {
     }
 
     function blackLogos() {
-      smallCrownIcon.attr('src', '../img/crown_logo_black.png');
-      designIcon.attr('src', '../img/design_icon2.png');
-      frontIcon.attr('src', '../img/code_icon2.png');
-      photoIcon.attr('src', '../img/photo_icon2.png');
-      aboutIcon.attr('src', '../img/phone_icon2.png');
+      smallCrownIcon.attr('src', 'img/crown_logo_black.png');
+      designIcon.attr('src', 'img/design_icon2.png');
+      frontIcon.attr('src', 'img/code_icon2.png');
+      photoIcon.attr('src', 'img/photo_icon2.png');
+      aboutIcon.attr('src', 'img/phone_icon2.png');
     }
 
     if (scroll >= landingSectionHeight) {
