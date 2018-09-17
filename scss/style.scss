@@ -23,7 +23,7 @@ section {
   padding: 25px 40px;
 }
 
-header {
+header, footer {
   padding-top: 15px;
 
   ul {
@@ -310,25 +310,25 @@ header {
   background-image: url("../img/back_logo_opacity.png");
   background-repeat: no-repeat;
   background-position: -199px 82px;
-  height: 100vh;
   padding: 0;
 
   .main {
     flex-direction: row;
     justify-content: space-around;
     position: relative;
-.side-photo {
-  &:before {
-    content: '';
-    width: 0;
-  	height: 0;
-  	border-bottom: 400px solid black;
-  	border-left: 400px solid transparent;
-    position: absolute;
-    bottom: 0;
-    right:0;
-  }
-}
+
+    .side-photo {
+      &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 400px solid black;
+        border-left: 400px solid transparent;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
 
     div {
       display: flex;
@@ -340,7 +340,7 @@ header {
 
     div:nth-child(1) {
       width: 64%;
-    padding: 3% 5%;
+      padding: 3% 5%;
 
       h2 {
         color: black;
@@ -360,29 +360,32 @@ header {
       right: 15%;
       bottom: -39px;
     }
-    }
+  }
+}
 
+.tools {
+  padding-bottom: 50px;
+  background: black;
+  z-index: 1;
+
+  h2 {
+    color: white;
+    padding-top: 41px;
+    padding-left: 33%;
   }
 
-  .tools {
-    height: 40vh;
-    background: black;
-    z-index: 1;
-
-    h2 {
-      color: white;
-      padding-top: 41px;
-      padding-left: 33%;
-    }
-
-    img {
-      height: 70px;
-      margin-left: 30px;
-      margin-top: 30px;
-    }
-
-
+  img {
+    height: 70px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
+
+//footer
+footer {
+  height: 60px;
+}
+
 //aside
 
 aside {
