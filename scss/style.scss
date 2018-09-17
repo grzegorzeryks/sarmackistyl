@@ -311,7 +311,7 @@ header, footer {
   background-repeat: no-repeat;
   background-position: -199px 82px;
   padding: 0;
-
+  height: 100vh;
   .main {
     flex-direction: row;
     justify-content: space-around;
@@ -384,6 +384,7 @@ header, footer {
 //footer
 footer {
   height: 60px;
+  background: $color-bg;
 }
 
 //aside
