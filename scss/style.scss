@@ -129,6 +129,12 @@ header, footer {
     transform: rotate(359deg);
   }
 }
+
+@media screen and (max-width: 812px) {
+  .background-logo {
+    animation: none !important;
+  }
+}
 //second section
 
 .graphic {
