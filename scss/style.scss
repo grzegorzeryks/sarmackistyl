@@ -261,6 +261,14 @@ header, footer {
       background: url("../img/preview_git.png") no-repeat;
     }
   }
+
+
+}
+
+@media screen and (max-width: 1080px) {
+  article {
+    width: 90% !important;
+  }
 }
 
 .frontend-img {
@@ -428,7 +436,7 @@ aside {
     transition: all 1s;
 
     &:hover {
-      transform: rotateY(3.142rad);
+      transform: rotate(3.142rad);
     }
   }
 }
