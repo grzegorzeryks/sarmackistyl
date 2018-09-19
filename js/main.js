@@ -14,8 +14,6 @@ $(document).ready(function() {
   //page load animation
   backLogo.css('top', '11%');
   crownLogo.addClass('crown-logo-move');
-  console.log(smallLogo);
-  console.log(designIcon);
 
   //scrolling
 
