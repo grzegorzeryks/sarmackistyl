@@ -23,7 +23,8 @@ section {
   padding: 25px 40px;
 }
 
-header, footer {
+footer,
+header {
   padding-top: 15px;
 
   ul {
@@ -129,7 +130,6 @@ header, footer {
     transform: rotate(359deg);
   }
 }
-
 @media screen and (max-width: 812px) {
   .background-logo {
     animation: none !important;
@@ -267,10 +267,7 @@ header, footer {
       background: url("../img/preview_git.png") no-repeat;
     }
   }
-
-
 }
-
 @media screen and (max-width: 1080px) {
   article {
     width: 90% !important;
@@ -307,7 +304,8 @@ header, footer {
 .dzik {
   background: url("../img/dzik.png");
 }
-.zombie{
+
+.zombie {
   background: url("../img/zombie.png");
 }
 
@@ -325,10 +323,12 @@ header, footer {
 .about {
   background: white;
   background-image: url("../img/back_logo_opacity.png");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: -199px 82px;
   padding: 0;
   height: 100vh;
+
   .main {
     flex-direction: row;
     justify-content: space-around;
@@ -369,7 +369,7 @@ header, footer {
         font-size: 1.1rem;
       }
 
-      .contact-button{
+      .contact-button {
         background: $color-bg;
         border-radius: 10px;
         display: flex;
@@ -377,9 +377,11 @@ header, footer {
         padding: 20px 10px !important;
         transition: all 1s;
         cursor: pointer;
-        h3{
+
+        h3 {
           color: white;
         }
+
         &:hover {
           transform: translateY(-10px);
         }
@@ -387,10 +389,11 @@ header, footer {
     }
 
     img {
-      width: 117%;
+      width: 0%;
       position: relative;
       right: 15%;
       bottom: -39px;
+      transition: all 0.9s;
     }
   }
 }
@@ -400,6 +403,7 @@ header, footer {
   background: black;
   z-index: 1;
   height: 40vh;
+
   h2 {
     color: white;
     padding-top: 41px;
@@ -411,22 +415,19 @@ header, footer {
     margin-left: 30px;
     margin-top: 30px;
   }
+
   div {
     width: 90%;
     margin: 0 auto;
   }
 }
-
-
-
 //footer
+
 footer {
   height: 60px;
   background: $color-bg;
 }
-
 //aside
-
 aside {
   width: 50px;
   height: 40%;
@@ -449,6 +450,10 @@ aside {
 
     &:hover {
       transform: rotate(3.142rad);
+    }
+
+    &:active {
+      transform: scale(2);
     }
   }
 }

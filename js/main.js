@@ -10,6 +10,17 @@ $(document).ready(function() {
   let photoIcon = $('#photo-icon');
   let aboutIcon = $('#about-icon');
   let smallCrownIcon = $('#small-crown-icon');
+  let clickSound = new Audio('../snd/click.mp3');
+  let allLi = $('li');
+
+
+  // //adding sounds to all li
+  // allLi.each(function() {
+  //   $(this).click(function() {
+  //     console.log('works');
+  //     clickSound.play();
+  //   });
+  // });
 
   //page load animation
   backLogo.css('top', '11%');
@@ -62,9 +73,13 @@ $(document).ready(function() {
       blackLogos();
     } else if (scroll > frontendEndPosition && scroll <= photoEndPosition) {
       whiteLogos();
+      $('.side-photo img').css('width', '0%');
     } else if (scroll > photoEndPosition) {
       blackLogos();
+      $('.side-photo img').css('width', '117%');
     }
+
+
   });
 
 
