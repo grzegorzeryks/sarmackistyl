@@ -10,7 +10,7 @@ $(document).ready(function() {
   let photoIcon = $('#photo-icon');
   let aboutIcon = $('#about-icon');
   let smallCrownIcon = $('#small-crown-icon');
-  let clickSound = new Audio('../snd/click.mp3');
+  let clickSound = new Audio('snd/click.mp3');
   let allLi = $('li');
 
 
@@ -92,11 +92,7 @@ let contactButtons = $('.contact-click')
 
 contactButtons.each(function() {
   $(this).click(function() {
-    let scrollPosition = $(window).scrollTop();
     $('.contact').css('left', '0');
-    // $('.contact').css('top', scrollPosition + 'px');
-    // console.log('this is ' + scrollPosition);
-    // console.log('works');
     clickSound.play();
   });
 });
@@ -104,7 +100,7 @@ contactButtons.each(function() {
 
 contactBox.click(function(){
   $(this).css('left', '-3000px');
-  clickSound.play();
+clickSound.play();
 });
 
 console.log(contactButtons);
