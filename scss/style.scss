@@ -505,6 +505,10 @@ aside {
         display: flex;
         justify-content: space-around;
         padding: 30px;
+        a
+        { transition: 1s all;
+          &:hover{transform: translateY(-5px);}
+        }
       }
     }
   }
