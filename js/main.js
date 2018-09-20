@@ -74,9 +74,12 @@ $(document).ready(function() {
     } else if (scroll > frontendEndPosition && scroll <= photoEndPosition) {
       whiteLogos();
       $('.side-photo img').css('width', '0%');
+      $('.tools').css('margin-left', '-3000px');
     } else if (scroll > photoEndPosition) {
       blackLogos();
-      $('.side-photo img').css('width', '117%');
+      $('.side-photo img').css('width', '31%');
+      $('.tools').css('margin-left', '0');
+
     }
 
 

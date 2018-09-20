@@ -390,10 +390,10 @@ header {
 
     img {
       width: 0%;
-      position: relative;
-      right: 15%;
+      position: absolute;
+      right: 5%;
       bottom: -39px;
-      transition: all 0.9s;
+      transition: all 2s;
     }
   }
 }
@@ -403,7 +403,8 @@ header {
   background: black;
   z-index: 1;
   height: 40vh;
-
+  transition: all 1s;
+  margin-left: -3400px;
   h2 {
     color: white;
     padding-top: 41px;
