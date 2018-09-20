@@ -86,7 +86,28 @@ $(document).ready(function() {
   });
 
 
+//contact slide
+let contactBox = $('.contact');
+let contactButtons = $('.contact-click')
 
+contactButtons.each(function() {
+  $(this).click(function() {
+    let scrollPosition = $(window).scrollTop();
+    $('.contact').css('left', '0');
+    // $('.contact').css('top', scrollPosition + 'px');
+    // console.log('this is ' + scrollPosition);
+    // console.log('works');
+    clickSound.play();
+  });
+});
+
+
+contactBox.click(function(){
+  $(this).css('left', '-3000px');
+  clickSound.play();
+});
+
+console.log(contactButtons);
 
   //Smooth scroll
   $('a[href*="#"]')
