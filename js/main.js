@@ -13,7 +13,7 @@ $(document).ready(function() {
   let clickSound = new Audio('snd/click.mp3');
   let allLi = $('li');
 
-console.log('about position ' + $('.about').scrollTop());
+  console.log('about position ' + $('.about').scrollTop());
 
   // //adding sounds to all li
   // allLi.each(function() {
@@ -38,7 +38,7 @@ console.log('about position ' + $('.about').scrollTop());
     let graphicEndPosition = landingSectionHeight + grapicSectionHeight + 20;
     let frontendEndPosition = graphicEndPosition + frontendSectionHeight;
     let photoEndPosition = frontendEndPosition + photoSectionHeight;
- let aboutStartPosition = $('.about').offset();
+    let aboutStartPosition = $('.about').offset();
     console.log(scroll);
     console.log('frontend ' + frontendEndPosition);
     console.log('graph ' + grapicSectionHeight);
@@ -79,36 +79,36 @@ console.log('about position ' + $('.about').scrollTop());
       whiteLogos();
       $('.side-photo img').css('width', '0%');
       $('.tools').css('margin-left', '-3000px');
-      asideMenu.css('position', 'fixed').css('top','4%').css('transition','all 0.4s');
+      asideMenu.css('position', 'fixed').css('top', '4%').css('transition', 'all 0.4s');
     } else if (scroll > photoEndPosition) {
       blackLogos();
       $('.side-photo img').css('width', '31%');
       $('.tools').css('margin-left', '0');
-      asideMenu.css('position', 'absolute').css('top',aboutStartPosition.top +'px').css('transition','all 0.4s');
+      asideMenu.css('position', 'absolute').css('top', aboutStartPosition.top + 'px').css('transition', 'all 0.4s');
     }
 
 
   });
 
 
-//contact slide
-let contactBox = $('.contact');
-let contactButtons = $('.contact-click')
+  //contact slide
+  let contactBox = $('.contact');
+  let contactButtons = $('.contact-click')
 
-contactButtons.each(function() {
-  $(this).click(function() {
-    $('.contact').css('left', '0');
+  contactButtons.each(function() {
+    $(this).click(function() {
+      $('.contact').css('left', '0');
+      clickSound.play();
+    });
+  });
+
+
+  contactBox.click(function() {
+    $(this).css('left', '-3000px');
     clickSound.play();
   });
-});
 
-
-contactBox.click(function(){
-  $(this).css('left', '-3000px');
-clickSound.play();
-});
-
-console.log(contactButtons);
+  console.log(contactButtons);
 
   //Smooth scroll
   $('a[href*="#"]')
