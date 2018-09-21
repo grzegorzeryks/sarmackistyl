@@ -130,10 +130,20 @@ header {
     transform: rotate(359deg);
   }
 }
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 842px) {
   .background-logo {
     animation: none !important;
   }
+
+  .contact .contact-main {
+    width: 90% !important;}
+
+    .about .main {
+    height: 100% !important;
+}
+.tools {
+  height: auto !important;
+}
 }
 //second section
 
@@ -333,7 +343,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     position: relative;
-
+    height: 60vh;
     .side-photo {
       &:before {
         content: '';
