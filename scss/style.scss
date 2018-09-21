@@ -136,13 +136,38 @@ header {
   }
 
   .contact .contact-main {
-    width: 90% !important;}
+    width: 90% !important;
+  }
 
-    .about .main {
+  .about .main {
     height: 100% !important;
+  }
+
+  .tools {
+    height: auto !important;
+  }
 }
-.tools {
-  height: auto !important;
+@media screen and (max-width: 842px) {
+  footer,
+  header {
+    display: none;
+  }
+
+  .start {
+    height: 100vh;
+  }
+  .construct {
+    display: none;
+  }
+  .about {
+    height: 100% !important;
+  }
+  .side-photo{
+    display: none !important;
+  }
+  .about .main div:nth-child(1) {
+    width: 94% !important;
+    padding: 3% 0% 3% 8px !important;
 }
 }
 //second section
@@ -344,6 +369,7 @@ header {
     justify-content: space-around;
     position: relative;
     height: 60vh;
+
     .side-photo {
       &:before {
         content: '';
@@ -503,6 +529,7 @@ aside {
     flex-direction: column;
     border: 8px $color-bg solid;
     z-index: 3;
+
     p {
       padding: 5%;
     }
@@ -515,9 +542,13 @@ aside {
         display: flex;
         justify-content: space-around;
         padding: 30px;
-        a
-        { transition: 1s all;
-          &:hover{transform: translateY(-5px);}
+
+        a {
+          transition: 1s all;
+
+          &:hover {
+            transform: translateY(-5px);
+          }
         }
       }
     }
