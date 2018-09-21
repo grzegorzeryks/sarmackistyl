@@ -156,19 +156,41 @@ header {
   .start {
     height: 100vh;
   }
+
   .construct {
     display: none;
   }
+
   .about {
     height: 100% !important;
   }
-  .side-photo{
+
+  .side-photo {
     display: none !important;
   }
+
   .about .main div:nth-child(1) {
     width: 94% !important;
-    padding: 3% 0% 3% 8px !important;
-}
+    padding: 3% 0 3% 8px !important;
+  }
+
+  .frontend article {
+    display: block!important;
+    height: 229px !important;
+  }
+
+  .frontend article div {
+    width: 96% !important;
+  }
+
+  .frontend-info {
+    p {
+      display: none;
+    }
+    div {
+      display: none;
+    }
+  }
 }
 //second section
 
