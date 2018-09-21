@@ -78,6 +78,7 @@ $(document).ready(function() {
       $('.side-photo img').css('width', '31 %');
       $('.tools').css('margin-left', '0');
       asideMenu.css('position', 'absolute').css('top', aboutStartPosition.top + 'px').css('transition', 'all 0.4s');
+      $('.side-photo img').css('width', '30%');
     }
 
 
