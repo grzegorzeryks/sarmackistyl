@@ -188,10 +188,12 @@ header {
     p {
       display: none;
     }
+
     div {
       display: none;
     }
   }
+
   h3 {
     font-size: 4.5vw;
   }
@@ -202,6 +204,7 @@ header {
   background: $color-black url('../img/back_logo_solid.png') no-repeat;
   background-position: -199px 82px;
   background-size: cover;
+  background-attachment: fixed;
 
   h2 {
     color: $color-white;
@@ -378,7 +381,12 @@ header {
 }
 //photo
 
-.photo {}
+.photo {
+  background-image: url("../img/back_logo_opacity.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: -199px 82px;
+}
 //about
 
 .about {

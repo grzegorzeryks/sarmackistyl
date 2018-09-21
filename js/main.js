@@ -15,13 +15,6 @@ $(document).ready(function() {
 
   console.log('about position ' + $('.about').scrollTop());
 
-  // //adding sounds to all li
-  // allLi.each(function() {
-  //   $(this).click(function() {
-  //     console.log('works');
-  //     clickSound.play();
-  //   });
-  // });
 
   //page load animation
   backLogo.css('top', '11%');
