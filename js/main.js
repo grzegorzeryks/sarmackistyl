@@ -75,7 +75,7 @@ $(document).ready(function() {
       asideMenu.css('position', 'fixed').css('top', '4%').css('transition', 'all 0.4s');
     } else if (scroll > photoEndPosition) {
       blackLogos();
-      $('.side-photo img').css('width', '31%');
+      $('.side-photo img').css('width', '31 %');
       $('.tools').css('margin-left', '0');
       asideMenu.css('position', 'absolute').css('top', aboutStartPosition.top + 'px').css('transition', 'all 0.4s');
     }
