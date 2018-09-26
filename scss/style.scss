@@ -72,6 +72,8 @@ header {
 .start {
   padding: 0;
   height: 98vh;
+  position: relative;
+    z-index: -2;
 }
 
 .crown-logo {
@@ -82,7 +84,7 @@ header {
   width: 30%;
   height: 90vh;
   transition: all 1.6s;
-
+  position: fixed;
   &:hover {
     transform: rotateY(3.142rad);
   }
@@ -382,6 +384,7 @@ header {
 //photo
 
 .photo {
+  background-color: $color-bg;
   background-image: url("../img/back_logo_opacity.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
