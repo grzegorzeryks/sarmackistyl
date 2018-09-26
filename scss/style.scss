@@ -267,7 +267,7 @@ header {
   background: $font-nav url('../img/crown_logo2.png') no-repeat;
   background-position: right -27px;
   background-attachment: fixed;
-
+  transition: all 1s;
   article {
     width: 70%;
     height: 400px;

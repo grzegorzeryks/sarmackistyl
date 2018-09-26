@@ -1,4 +1,4 @@
-$(document).ready(function() {
+  $(document).ready(function() {
   let backLogo = $(".background-logo");
   let graphic = $('#graphic');
   let crownLogo = $('.crown-logo');
@@ -54,6 +54,8 @@ $(document).ready(function() {
       aboutIcon.attr('src', 'img/phone_icon2.png');
     }
 
+
+
     if (scroll >= landingSectionHeight) {
       constructLogo.css('right', '4px');
       asideMenu.addClass('move-aside');
@@ -68,6 +70,9 @@ $(document).ready(function() {
       whiteLogos();
     } else if (scroll >= graphicEndPosition && scroll <= frontendEndPosition) {
       blackLogos();
+        $('.frontend').css('background-position', '50% ' + '-27px' );
+
+
     } else if (scroll > frontendEndPosition && scroll <= photoEndPosition) {
       whiteLogos();
       $('.side-photo img').css('width', '0%');
@@ -80,6 +85,7 @@ $(document).ready(function() {
       asideMenu.css('position', 'absolute').css('top', aboutStartPosition.top + 'px').css('transition', 'all 0.4s');
       $('.side-photo img').css('width', '30%');
     }
+
 
 
   });
