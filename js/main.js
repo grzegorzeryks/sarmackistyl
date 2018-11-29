@@ -107,6 +107,16 @@
 
   console.log(contactButtons);
 
+//graphicdesign gallery
+let graphicdesign = $('.gallery div');
+graphicdesign.each(function(){
+  $(this).click(function(){
+    console.log('works');
+  })
+});
+
+
+
   //Smooth scroll
   $('a[href*="#"]')
 
