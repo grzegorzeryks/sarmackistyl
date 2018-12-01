@@ -14,6 +14,8 @@
   let allLi = $('li');
 
   console.log('about position ' + $('.about').scrollTop());
+//gallery slider
+let gallerySlider = $('.gallery-slider');
 
 
   //page load animation
@@ -109,10 +111,12 @@
 
 //graphicdesign gallery
 let graphicdesign = $('.gallery div');
+let closeSlider = $('.close-slider');
+closeSlider.click(function(){gallerySlider.css('left','-1990px')})
 graphicdesign.each(function(){
   $(this).click(function(){
-    console.log('works');
-  })
+    gallerySlider.css('left','0')
+  });
 });
 
 

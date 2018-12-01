@@ -591,3 +591,35 @@ aside {
     }
   }
 }
+
+.gallery-slider {
+  background: $color-black-transparent;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: -1550px;
+  transition: all 0.5s;
+  div{
+    width:60%;
+    height: 100vh;
+    background: black;
+    margin: 0 auto;
+    position: relative;
+
+  }
+  .close-slider {
+    width: 40px;
+    height: 40px;
+    background: $color-white;
+    position:absolute;
+    top: 40px;
+    right: 50px;
+    border-radius: 50%;
+    display: flex;
+    span{
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
