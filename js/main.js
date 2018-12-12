@@ -107,7 +107,6 @@ let gallerySlider = $('.gallery-slider');
     clickSound.play();
   });
 
-  console.log(contactButtons);
 
 //graphicdesign gallery
 let graphicdesign = $('.gallery div');

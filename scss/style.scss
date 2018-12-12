@@ -591,7 +591,7 @@ aside {
     }
   }
 }
-
+//graphic galllery
 .gallery-slider {
   background: $color-black-transparent;
   height: 100vh;
@@ -600,26 +600,38 @@ aside {
   top:0;
   left: -3550px;
   transition: all 0.5s;
-  div{
-    width:60%;
-    height: 100vh;
-    background: black;
-    margin: 0 auto;
-    position: relative;
 
-  }
+    .img-container{
+      width:60%;
+      height: 100vh;
+      background: black;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      overflow-y: scroll;
+
+    }
+    img{
+      width: 100%;
+    }
+
   .close-slider {
     width: 40px;
     height: 40px;
-    background: $color-white;
+    border: 3px solid white;
     position:absolute;
     top: 40px;
-    right: 50px;
+    right: 2%;
     border-radius: 50%;
     display: flex;
     span{
       color: black;
       font-weight: bold;
     }
+  }
+  ::-webkit-scrollbar{
+    width: 8px;
+    background: none;
   }
 }
