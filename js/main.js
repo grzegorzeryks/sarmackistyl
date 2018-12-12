@@ -1,21 +1,21 @@
   $(document).ready(function() {
-  let backLogo = $(".background-logo");
-  let graphic = $('#graphic');
-  let crownLogo = $('.crown-logo');
-  let asideMenu = $('aside');
-  let constructLogo = $('.construct');
-  let smallLogo = $('.small-logo');
-  let designIcon = $('#design-icon');
-  let frontIcon = $('#front-icon');
-  let photoIcon = $('#photo-icon');
-  let aboutIcon = $('#about-icon');
-  let smallCrownIcon = $('#small-crown-icon');
-  let clickSound = new Audio('snd/click.mp3');
-  let allLi = $('li');
+  var backLogo = $('.background-logo');
+  var graphic = $('#graphic');
+  var crownLogo = $('.crown-logo');
+  var asideMenu = $('aside');
+  var constructLogo = $('.construct');
+  var smallLogo = $('.small-logo');
+  var designIcon = $('#design-icon');
+  var frontIcon = $('#front-icon');
+  var photoIcon = $('#photo-icon');
+  var aboutIcon = $('#about-icon');
+  var smallCrownIcon = $('#small-crown-icon');
+  var clickSound = new Audio('snd/click.mp3');
+  var allLi = $('li');
 
   console.log('about position ' + $('.about').scrollTop());
 //gallery slider
-let gallerySlider = $('.gallery-slider');
+var gallerySlider = $('.gallery-slider');
 
 
   //page load animation
@@ -25,15 +25,15 @@ let gallerySlider = $('.gallery-slider');
   //scrolling
 
   $(window).scroll(function() {
-    let scroll = $(window).scrollTop();
-    let grapicSectionHeight = $('.graphic').height();
-    let landingSectionHeight = $('.start').height();
-    let frontendSectionHeight = $('.frontend').height();
-    let photoSectionHeight = $('.photo').height();
-    let graphicEndPosition = landingSectionHeight + grapicSectionHeight + 20;
-    let frontendEndPosition = graphicEndPosition + frontendSectionHeight;
-    let photoEndPosition = frontendEndPosition + photoSectionHeight;
-    let aboutStartPosition = $('.about').offset();
+    var scroll = $(window).scrollTop();
+    var grapicSectionHeight = $('.graphic').height();
+    var landingSectionHeight = $('.start').height();
+    var frontendSectionHeight = $('.frontend').height();
+    var photoSectionHeight = $('.photo').height();
+    var graphicEndPosition = landingSectionHeight + grapicSectionHeight + 20;
+    var frontendEndPosition = graphicEndPosition + frontendSectionHeight;
+    var photoEndPosition = frontendEndPosition + photoSectionHeight;
+    var aboutStartPosition = $('.about').offset();
     console.log(scroll);
     console.log('frontend ' + frontendEndPosition);
     console.log('graph ' + grapicSectionHeight);
@@ -91,8 +91,8 @@ let gallerySlider = $('.gallery-slider');
 
 
   //contact slide
-  let contactBox = $('.contact');
-  let contactButtons = $('.contact-click')
+  var contactBox = $('.contact');
+  var contactButtons = $('.contact-click')
 
   contactButtons.each(function() {
     $(this).click(function() {
@@ -109,15 +109,28 @@ let gallerySlider = $('.gallery-slider');
 
 
 //graphicdesign gallery
-let graphicdesign = $('.gallery div');
-let closeSlider = $('.close-slider');
-closeSlider.click(function(){gallerySlider.css('left','-1990px')})
+var graphicdesign = $('.gallery div');
+var closeSlider = $('.close-slider');
+var galleryElements = $('.img-container div');
+console.log(galleryElements);
+closeSlider.click(function(){gallerySlider.css('left','-1990px')});
 graphicdesign.each(function(){
   $(this).click(function(){
-    gallerySlider.css('left','0')
+    gallerySlider.css('left','0');
+    removeVisibility(galleryElements);
+    currentClassName = '.' + $(this).attr('class');
+    console.log($(this).attr('class'));
+    $(currentClassName).css('display','block');
+
   });
 });
 
+//imgElementsVisibility
+function removeVisibility(array) {
+  array.each(function(){
+    $(this).css('display','none');
+  });
+  }
 
 
   //Smooth scroll
