@@ -113,15 +113,16 @@ var graphicdesign = $('.gallery div');
 var closeSlider = $('.close-slider');
 var galleryElements = $('.img-container div');
 console.log(galleryElements);
-closeSlider.click(function(){gallerySlider.css('left','-1990px')});
+closeSlider.click(function(){gallerySlider.css('left','-1990px');
+$('body').css('overflow','auto');
+});
 graphicdesign.each(function(){
   $(this).click(function(){
     gallerySlider.css('left','0');
     removeVisibility(galleryElements);
     currentClassName = '.' + $(this).attr('class');
-    console.log($(this).attr('class'));
     $(currentClassName).css('display','block');
-
+    $('body').css('overflow','hidden');
   });
 });
 

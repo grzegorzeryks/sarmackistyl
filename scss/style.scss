@@ -602,7 +602,7 @@ aside {
   position: fixed;
   top: 0;
   left: -3550px;
-  transition: all 0.5s;
+  transition: all 0.2s;
 
   .img-container {
     width: 88%;
@@ -612,7 +612,7 @@ aside {
     position: relative;
     display: flex;
     justify-content: center;
-    overflow-y: scroll;
+    overflow-y: auto;
     div {
       display:none;
     }
