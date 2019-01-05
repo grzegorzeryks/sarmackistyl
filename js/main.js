@@ -3,7 +3,6 @@
   var graphic = $('#graphic');
   var crownLogo = $('.crown-logo');
   var asideMenu = $('aside');
-  var constructLogo = $('.construct');
   var smallLogo = $('.small-logo');
   var designIcon = $('#design-icon');
   var frontIcon = $('#front-icon');
@@ -58,10 +57,10 @@ var gallerySlider = $('.gallery-slider');
 
 
     if (scroll >= landingSectionHeight) {
-      constructLogo.css('right', '4px');
+
       asideMenu.addClass('move-aside');
     } else {
-      constructLogo.css('right', '-30%');
+
       asideMenu.removeClass('move-aside');
     }
 

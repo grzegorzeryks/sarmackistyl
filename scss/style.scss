@@ -160,9 +160,6 @@ header {
     height: 100vh;
   }
 
-  .construct {
-    display: none;
-  }
 
   .about {
     height: 100% !important;
@@ -377,12 +374,7 @@ header {
   background: url("../img/zombie.png");
 }
 
-.construct {
-  transition: all 1s;
-  position: fixed;
-  right: -30%;
-  top: 30px;
-}
+
 //photo
 
 .photo {
