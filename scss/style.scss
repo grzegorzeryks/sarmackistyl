@@ -620,7 +620,8 @@ aside {
 
   img {
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
+    width: 99%;
   }
 
   .close-slider {
@@ -635,7 +636,7 @@ aside {
     display: flex;
     background: url("../img/close_icon.png");
     background-position: center;
-
+    transition: all 0.5s;
     &:hover {
       transform: scale(0.8);
     }
