@@ -10,3 +10,6 @@ My portfolio
 * SASS
 * PHP
 * Gulp
+
+### Preview
+https://grzegorzeryks.github.io/sarmackistyl/
