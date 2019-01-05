@@ -634,7 +634,7 @@ aside {
     right: 2%;
     border-radius: 50%;
     display: flex;
-    background: url("../img/close_icon.png");
+    background: url("../img/close_icon.png") black;
     background-position: center;
     transition: all 0.5s;
     &:hover {
