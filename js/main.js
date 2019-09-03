@@ -111,8 +111,10 @@ var gallerySlider = $('.gallery-slider');
 var graphicdesign = $('.gallery div');
 var closeSlider = $('.close-slider');
 var galleryElements = $('.img-container div');
+var imgContainer = $('.img-container');
 console.log(galleryElements);
-closeSlider.click(function(){gallerySlider.css('left','-1990px');
+closeSlider.click(function(){
+  gallerySlider.css('left','-1990px');
 $('body').css('overflow','auto');
 });
 graphicdesign.each(function(){
